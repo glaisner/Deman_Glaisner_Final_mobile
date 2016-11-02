@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:padding="30dp"
+    android:background="#00ff9d" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/restaurant_description"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/name"
+            android:lineSpacingExtra="20dp"
+            android:padding="10dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <CheckBox
+            android:text="Favori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/name"
+            android:onClick="addToFavorite"
+            android:id="@+id/checkBox" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:lineSpacingExtra="20dp"
+            android:padding="10dp"
+            android:id="@+id/cuisine"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:lineSpacingExtra="20dp"
+            android:id="@+id/location"
+            android:layout_below="@+id/cuisine"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+                                                 />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:lineSpacingExtra="20dp"
+            android:id="@+id/cost"
+            android:layout_below="@+id/location"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:lineSpacingExtra="20dp"
+            android:id="@+id/note"
+            android:layout_below="@+id/cost"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:lineSpacingExtra="20dp"
+            android:padding="10dp"
+            android:id="@+id/vote"
+            android:layout_below="@+id/note"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:lineSpacingExtra="20dp"
+            android:padding="10dp"
+            android:id="@+id/dist"
+            android:layout_below="@+id/vote"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:lineSpacingExtra="20dp"
+            android:padding="10dp"
+            android:id="@+id/dist2"
+            android:layout_below="@+id/dist"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:lineSpacingExtra="20dp"
+            android:padding="10dp"
+            android:id="@+id/dist3"
+            android:layout_below="@+id/dist2"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    </RelativeLayout>
+
+</ScrollView>
